@@ -9,7 +9,7 @@ export default class Video {
     render () {
         let newVideo = document.getElementById(this.parentID);
         
-        let inputVideo = newVideo.innerHTML + '<video controls src=' + this.src + ' width= ' + this.width + ' height= ' + this.height + '></video>';
+        let inputVideo = newVideo.innerHTML + `<video controls src=${this.src} width=${this.width} height=${this.height}></video>`;
 
         newVideo.innerHTML = inputVideo;
     }
